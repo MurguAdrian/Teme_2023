@@ -1,15 +1,16 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: always_specify_types
+
 import 'package:flutter/material.dart';
 
 class Pag2 extends StatefulWidget {
-  const Pag2({Key? key}) : super(key: key);
+  const Pag2({super.key});
 
   @override
   State<Pag2> createState() => _Pag2State();
 }
 
 class _Pag2State extends State<Pag2> {
-  TextEditingController _controller = TextEditingController();
+  final TextEditingController _controller = TextEditingController();
 
   double input = 0;
   String? errorText;
@@ -19,7 +20,7 @@ class _Pag2State extends State<Pag2> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(
+        title: const Text(
           'Currency Convertor',
           style: TextStyle(fontSize: 20, letterSpacing: 5),
         ),
@@ -45,14 +46,14 @@ class _Pag2State extends State<Pag2> {
                   },
                 );
               },
-              keyboardType: TextInputType.numberWithOptions(decimal: true),
-              style: TextStyle(fontSize: 25),
+              keyboardType: const TextInputType.numberWithOptions(decimal: true),
+              style: const TextStyle(fontSize: 25),
               decoration: InputDecoration(
                   hintText: 'Introdu Suma in Euro',
                   errorText: errorText,
-                  errorStyle: TextStyle(fontSize: 15),
+                  errorStyle: const TextStyle(fontSize: 15),
                   suffixIcon: IconButton(
-                      icon: Icon(Icons.close),
+                      icon: const Icon(Icons.close),
                       onPressed: () {
                         setState(() {
                           _controller.clear();
@@ -61,12 +62,12 @@ class _Pag2State extends State<Pag2> {
                       })),
             ),
             Container(
-              margin: EdgeInsets.all(10),
-              padding: EdgeInsets.all(25),
+              margin: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(25),
               decoration: BoxDecoration(border: Border.all(color: Colors.red)),
               child: Text(
                 '${(input * 4.95).toStringAsFixed(2)} RON ',
-                style: TextStyle(fontSize: 25),
+                style: const TextStyle(fontSize: 25),
               ),
             )
           ],
