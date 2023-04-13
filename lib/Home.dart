@@ -20,26 +20,28 @@ class Pag1 extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(35),
               child: ElevatedButton(
-                  child: const Text(
-                    'Convertor',
-                    style: TextStyle(fontSize: 25),
-                  ),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/2');
-                  }),
+                child: const Text(
+                  'Convertor',
+                  style: TextStyle(fontSize: 25),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/2');
+                },
+              ),
             ),
           ),
           Center(
             child: Container(
-              padding: const EdgeInsets.all(35),
+              padding: const EdgeInsets.all(15),
               child: ElevatedButton(
-                  child: const Text(
-                    'Sqare & Cube',
-                    style: TextStyle(fontSize: 25),
-                  ),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/3');
-                  }),
+                child: const Text(
+                  'Squere & Cube',
+                  style: TextStyle(fontSize: 25),
+                ),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/3');
+                },
+              ),
             ),
           ),
         ],

@@ -29,8 +29,7 @@ class _Page3State extends State<Page3> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Image.network(
-                  'https://www.cec.ro/sites/default/files/img/media/2021-06/curs%20valutar.jpg'),
+              Image.network('https://www.cec.ro/sites/default/files/img/media/2021-06/curs%20valutar.jpg'),
               TextField(
                 textAlign: TextAlign.center,
                 controller: _controller,
@@ -45,8 +44,7 @@ class _Page3State extends State<Page3> {
                     }
                   });
                 },
-                keyboardType:
-                const TextInputType.numberWithOptions(decimal: true),
+                keyboardType: const TextInputType.numberWithOptions(decimal: true),
                 style: const TextStyle(fontSize: 25),
                 decoration: InputDecoration(
                     hintText: 'Introdu Suma in Euro',
@@ -64,8 +62,7 @@ class _Page3State extends State<Page3> {
               Container(
                 margin: const EdgeInsets.all(10),
                 padding: const EdgeInsets.all(25),
-                decoration:
-                BoxDecoration(border: Border.all(color: Colors.red)),
+                decoration: BoxDecoration(border: Border.all(color: Colors.red)),
                 child: Text(
                   '${(input * 4.95).toStringAsFixed(2)} RON ',
                   style: const TextStyle(fontSize: 25),
